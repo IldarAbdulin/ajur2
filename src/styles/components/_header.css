@@ -1,0 +1,333 @@
+.header__title {
+  padding: 16px 0px;
+  background: #dbbcc5;
+}
+.header__title h1 {
+  text-align: center;
+  color: #000000c3;
+  letter-spacing: 0.2px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header__info {
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__social-links p {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__social-links nav {
+  display: flex;
+  gap: 6px;
+}
+.header__logo {
+  position: relative;
+  cursor: pointer;
+}
+.header__logo img {
+  border: 1px solid #00000030;
+  border-radius: 10px;
+  position: absolute;
+  top: -17px;
+  left: -65px;
+}
+.header__add-application {
+  display: flex;
+}
+.header__add-application div p {
+  color: #000000d4;
+  font-size: 14px;
+  text-align: right;
+  margin: 3px 0;
+}
+.header__add-application div button {
+  margin-top: 25px;
+  margin-left: 30px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  color: #000000d4;
+  background: #dbbcc5;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__add-application div button a {
+  text-decoration: none;
+  color: #000;
+}
+.header__add-application div button:hover {
+  color: #000000e0;
+  background: #dbb6c0;
+}
+.header__navigation {
+  padding-top: 50px;
+  text-align: center;
+}
+.header__navigation a {
+  margin: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.header__navigation a:hover {
+  color: #424242;
+}
+.header__swiper {
+  position: relative;
+  margin-top: 30px;
+}
+.header__swiper .swiper-shadow {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  background: #00000085;
+}
+.header__swiper .swiper-title {
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__swiper .swiper-title h2 {
+  letter-spacing: 1.5px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #f7f7f7;
+}
+.header__swiper .swiper-title p {
+  color: #e1e1e1;
+  width: 100%;
+  margin: 30px auto;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+.header__swiper img {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+.swiper-pagination-bullet {
+  border: 1px solid #e1e1e1 !important;
+  background: rgb(255, 255, 255) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #e1e1e1 !important;
+}
+.header-burger-menu {
+  display: none;
+}
+@media (max-width: 1380px) {
+  .header__logo img {
+    width: 200px;
+    top: -5px;
+    left: -45px;
+  }
+  .header__swiper .swiper-shadow {
+    height: 60vh;
+  }
+  .header__swiper img {
+    height: 60vh;
+  }
+}
+@media (max-width: 1215px) {
+  .header__logo img {
+    width: 180px;
+    top: -5px;
+    left: -45px;
+  }
+}
+@media (max-width: 1160px) {
+  .header__add-application {
+    display: block;
+  }
+  .header__add-application div button {
+    margin-top: 9px;
+    margin-right: 0;
+  }
+  .header__logo img {
+    width: 230px;
+    top: 0px;
+    left: -120px;
+  }
+  .header__swiper .swiper-title h2 {
+    font-size: 28px;
+  }
+  .header__swiper .swiper-title p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1006px) {
+  .header__title {
+    display: none;
+  }
+  .header__info {
+    display: none;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .header-burger-menu {
+    display: block;
+  }
+  .header-burger-menu-logo {
+    width: 100%;
+    background: #fff;
+    height: 5vh;
+  }
+  .header-burger-menu .header-burger-menu-logo-parent {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-burger-menu .header-burger-menu-logo-parent h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .burger-menu {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .burger-menu-logo {
+    margin: 30px 0;
+  }
+  .burger-menu-logo img {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #00000030;
+    border-radius: 10px;
+  }
+  .burger-menu-navigation {
+    text-align: center;
+  }
+  .burger-menu-navigation a {
+    margin: 15px 0;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .burger-menu__social-links {
+    margin-top: 40px;
+  }
+  .burger-menu__social-links p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .burger-menu__social-links nav {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .burger-menu__add-application {
+    margin-top: 30px;
+  }
+  .burger-menu__add-application div p {
+    text-transform: uppercase;
+    color: #000000d4;
+    font-size: 12px;
+    margin: 3px 0;
+  }
+  .burger-menu__add-application div button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    color: #000000d4;
+    background: #dbbcc5;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .burger-menu__add-application div button a {
+    text-decoration: none;
+    color: #000;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+}
+@media (max-width: 915px) {
+  .header__swiper img {
+    height: 45vh;
+  }
+  .header__swiper .swiper-shadow {
+    height: 45vh;
+  }
+  .header__swiper .swiper-title h2 {
+    font-size: 24px;
+  }
+  .header__swiper .swiper-title p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 703px) {
+  .header__swiper .swiper-title {
+    width: 70%;
+  }
+  .header__swiper img {
+    height: 40vh;
+  }
+  .header__swiper .swiper-shadow {
+    height: 40vh;
+  }
+  .header__swiper .swiper-title h2 {
+    font-size: 20px;
+  }
+  .header__swiper .swiper-title p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .header__swiper .swiper-title {
+    width: 90%;
+  }
+  .header__swiper img {
+    height: 33vh;
+  }
+  .header__swiper .swiper-shadow {
+    height: 33vh;
+  }
+  .header__swiper .swiper-title h2 {
+    font-size: 18px;
+  }
+  .header__swiper .swiper-title p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .header__swiper img {
+    height: 30vh;
+  }
+  .header__swiper .swiper-shadow {
+    height: 30vh;
+  }
+  .header__swiper .swiper-title h2 {
+    font-size: 17px;
+  }
+  .header__swiper .swiper-title p {
+    font-size: 10px;
+  }
+}

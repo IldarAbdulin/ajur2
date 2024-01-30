@@ -1,0 +1,54 @@
+@import './components/_all.css';
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.meeting {
+  padding: 30px 0;
+  background: #dbbcc5;
+}
+.meeting p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  width: 40%;
+  margin: 0 auto;
+}
+.arrow-up {
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  background: #000;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 30px;
+  transition: 0.3s;
+}
+.arrow-up:hover > svg path {
+  fill: #161616;
+}
+.arrow-up:hover {
+  background: #d7d7d7;
+}
+hr {
+  height: 0.2px;
+  background: #8b8b8b3e;
+}
+@media (max-width: 900px) {
+  .meeting p {
+    width: 90%;
+  }
+}

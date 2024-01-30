@@ -1,0 +1,40 @@
+.about-us {
+  margin-top: -5px;
+  padding: 15px 0;
+  background: #dbbcc5;
+}
+.about-us h2 {
+  padding-top: 15px;
+  text-align: center;
+  color: #000000c3;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about-us p {
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin: 30px auto;
+}
+.about-us p:nth-child(3) {
+  width: 75%;
+}
+.about-us p:nth-child(4) {
+  margin-top: -27px !important;
+}
+.about-us p:nth-child(5) {
+  width: 77%;
+}
+.about-us p:nth-child(6) {
+  width: 62%;
+}
+@media (max-width: 905px) {
+  .about-us h2 {
+    font-size: 28px;
+  }
+  .about-us p {
+    width: 95% !important;
+  }
+}

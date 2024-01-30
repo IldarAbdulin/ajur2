@@ -1,0 +1,59 @@
+.sewing {
+  background: #dbbcc5;
+  padding: 40px 0;
+}
+.sewing-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.sewing-item {
+  margin: 10px 0;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sewing-item p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.sewing h2 {
+  padding-top: 25px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 21px;
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .sewing-item {
+    width: 50%;
+  }
+}
+@media (max-width: 950px) {
+  .sewing-items {
+    text-align: center;
+  }
+  .sewing-item {
+    width: 100%;
+  }
+  .sewing-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sewing h2 {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .sewing h2 {
+    width: 100%;
+    font-size: 20px;
+  }
+}

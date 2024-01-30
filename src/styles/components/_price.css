@@ -1,0 +1,92 @@
+.price {
+  padding: 20px 0 40px 0;
+  background: #dbbcc5;
+}
+.price h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+}
+.price p {
+  font-weight: 300;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.price div p:nth-child(1) {
+  width: 46%;
+}
+.price div p:nth-child(2) {
+  margin: 3px auto;
+  width: 44%;
+}
+.price div p:nth-child(3) {
+  margin: 0 auto;
+  width: 100%;
+}
+.price p {
+  margin-top: 20px;
+}
+.price-works {
+  margin: 40px 0;
+}
+.price-works .price-work {
+  padding: 8px 0;
+  border-bottom: 1px solid #00000023;
+  width: 60%;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+.price-works .price-work:nth-child(1) {
+  border-top: 1px solid #00000023;
+}
+.price-works .price-work h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.price-works .price-work .price-work-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.price-work-svg {
+  padding: 5px;
+  background: #dbbcc5;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.price-work-name:hover > .price-work-svg {
+  background: #fff;
+}
+.price-work-svg svg path {
+  fill: #fff;
+}
+.price-work-name:hover .price-work-svg svg > path {
+  fill: #000;
+}
+.price-work-prices h5 {
+  margin: 10px 0 -3px 0;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+.price-work-prices p {
+  color: #555;
+  font-weight: 400;
+}
+@media (max-width: 1000px) {
+  .price p {
+    width: 70% !important;
+  }
+  .price-works .price-work {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .price p {
+    width: 90% !important;
+  }
+}
